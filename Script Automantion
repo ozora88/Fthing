@@ -1,0 +1,76 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.thefthing.com/')
+
+WebUI.click(findTestObject('Object Repository/Page_The F Thing - Original and Trusted/i_F Labels_iconmenu accountf'))
+
+WebUI.switchToWindowTitle('The F Thing - Original and Trusted')
+
+WebUI.click(findTestObject('Object Repository/Page_The F Thing - Original and Trusted/button_Continue with Facebook'))
+
+WebUI.switchToWindowTitle('Masuk Facebook | Facebook')
+
+WebUI.setText(findTestObject('Object Repository/Page_Masuk Facebook  Facebook/input_Login ke Facebook_email'), 'testagung')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Masuk Facebook  Facebook/input_Login ke Facebook_pass'), 'iFGeFYmXIrWz63y3ZFBHWg==')
+
+WebUI.click(findTestObject('Object Repository/Page_Masuk Facebook  Facebook/button_Login'))
+
+WebUI.click(findTestObject('Object Repository/Page_Log in With Facebook/button_Continue as Agung'))
+
+WebUI.switchToWindowTitle('The F Thing - Original and Trusted')
+
+WebUI.click(findTestObject('Object Repository/Page_The F Thing - Original and Trusted/button_OK'))
+
+WebUI.click(findTestObject('Object Repository/Page_The F Thing - Original and Trusted/a_Men'))
+
+WebUI.click(findTestObject('Object Repository/Page_Men  The F Thing/i_Brands_iconf iconf-closepopuppromo'))
+
+WebUI.click(findTestObject('Object Repository/Page_Men  The F Thing/a_t-shirts'))
+
+WebUI.click(findTestObject('Object Repository/Page_Beli Kaos T-Shirts Pria Online  The F Thing/button_Quick view'))
+
+WebUI.click(findTestObject('Object Repository/Page_Beli Kaos T-Shirts Pria Online  The F Thing/span_L'))
+
+WebUI.click(findTestObject('Object Repository/Page_Beli Kaos T-Shirts Pria Online  The F Thing/button_ADD TO CART'))
+
+WebUI.click(findTestObject('Object Repository/Page_Beli Kaos T-Shirts Pria Online  The F Thing/i_Rp 229.000_iconf iconf-close'))
+
+WebUI.click(findTestObject('Object Repository/Page_Beli Kaos T-Shirts Pria Online  The F Thing/i_F Labels_iconmenu cartf'))
+
+WebUI.click(findTestObject('Object Repository/Page_Beli Kaos T-Shirts Pria Online  The F Thing/a_Checkout'))
+
+WebUI.click(findTestObject('Object Repository/Page_Shipping - Checkout - The F thing World/button_OK'))
+
+WebUI.click(findTestObject('Object Repository/Page_Shipping - Checkout - The F thing World/i_OK_iconf iconf-closecheckout'))
+
+WebUI.click(findTestObject('Object Repository/Page_Shipping - Checkout - The F thing World/i_Select Shipping_fa fa-chevron-down'))
+
+WebUI.click(findTestObject('Object Repository/Page_Shipping - Checkout - The F thing World/button_Choose Shipping'))
+
+WebUI.click(findTestObject('Object Repository/Page_Shipping - Checkout - The F thing World/button_OK'))
+
+WebUI.click(findTestObject('Object Repository/Page_Shipping - Checkout - The F thing World/button_Choose Payment'))
+
+WebUI.click(findTestObject('Object Repository/Page_Beli Kaos T-Shirts Pria Online  The F Thing/a_Bca_Virtual_Account'))
+
+WebUI.click(findTestObject('Object Repository/Page_Shipping - Checkout - The F thing World/button_OK'))
